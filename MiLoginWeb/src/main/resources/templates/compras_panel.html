@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial de Compras/Ventas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; display: flex; background-color: #f4f4f4; }
+        .content { flex-grow: 1; padding: 20px 40px; }
+        h1 { color: #003366; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>🛒 Historial de Ventas</h1>
+        <p>Aquí se listarán todas las transacciones del sistema.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Venta</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Monto Total</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Gasolina Premium</td>
+                    <td>45 L</td>
+                    <td>$950.00</td>
+                    <td>2025-11-14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

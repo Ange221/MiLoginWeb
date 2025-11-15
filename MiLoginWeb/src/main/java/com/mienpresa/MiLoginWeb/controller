@@ -1,0 +1,18 @@
+package com.miempresa.miloginweb.controller; // ¡Asegúrate de que el paquete sea el del controller!
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+// Esta clase SÓLO maneja las peticiones web
+@RestController
+public class LoginController { // Nombre de la clase cambiado a LoginController
+
+    @GetMapping("/") 
+    public String paginaPrincipal() {
+        return "<html>"
+             + "<body>"
+             + "<h1>🎉 ¡APLICACIÓN WEB FUNCIONAL! 🎉</h1>"
+             + "</body>"
+             + "</html>";
+    }
+}

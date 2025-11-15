@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Gasolinerías</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* CSS BÁSICO */
+        body { margin: 0; font-family: Arial, sans-serif; display: flex; background-color: #f4f4f4; }
+        .sidebar { width: 250px; background-color: #003366; color: white; height: 100vh; padding: 0; box-shadow: 2px 0 5px rgba(0,0,0,0.1); }
+        .sidebar-header { display: flex; align-items: center; padding: 30px 20px; font-size: 1.5em; font-weight: bold; border-bottom: 1px solid #002244; }
+        .menu-item { display: flex; align-items: center; padding: 15px 20px; cursor: pointer; transition: background-color 0.3s; text-decoration: none; color: white; }
+        .menu-item:hover { background-color: #004d99; }
+        .menu-item i { margin-right: 15px; font-size: 1.2em; }
+        .content { flex-grow: 1; padding: 20px 40px; }
+        .header { display: flex; justify-content: flex-end; width: 100%; font-size: 1.1em; font-weight: bold; color: #333; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-gas-pump"></i> Sistema de Gasolinerias
+        </div>
+        <div style="padding-top: 10px;">
+            <a th:href="@{/sistema}" class="menu-item"><i class="fas fa-home"></i> Inicio</a>
+            <a th:href="@{/usuario}" class="menu-item"><i class="fas fa-user"></i> Usuario</a>
+            <a th:href="@{/cupon}" class="menu-item"><i class="fas fa-receipt"></i> Cupón</a>
+            <a th:href="@{/compras}" class="menu-item"><i class="fas fa-shopping-bag"></i> Compras</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            Perfil
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+            
+            <h2>Bienvenido al sitio web de gasolina</h2>
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+             <a th:href="@{/}" style="text-decoration: none; color: #007bff;">[Cerrar Sesión]</a>
+        </div>
+    </div>
+
+</body>
+</html>
