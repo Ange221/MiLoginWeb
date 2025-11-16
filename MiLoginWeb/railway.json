@@ -1,0 +1,7 @@
+{
+  "build": {
+    "builder": "nixpacks",
+    "buildCommand": "cd MiLoginWeb && ./gradlew build --no-daemon",
+    "startCommand": "java -jar MiLoginWeb/build/libs/MiLoginWeb-0.0.1-SNAPSHOT.jar"
+  }
+}
